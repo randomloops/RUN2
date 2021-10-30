@@ -30,7 +30,9 @@ jobs:
          continue-on-error: true
          run: |
            cd DXCT
-           pip3 install pyrogram~=1.2.9 python-decouple telethon requests~=2.26.0 beautifulsoup4 aiohttp html2image~=2.0.1 python-dotenv~=0.19.0 tgcrypto apscheduler asyncio pycoingecko~=2.2.0
+           pip3 install telethon
+           pip3 install pyrogram~=1.2.9
+           pip3 install python-decouple requests~=2.26.0 beautifulsoup4 aiohttp html2image~=2.0.1 python-dotenv~=0.19.0 tgcrypto apscheduler asyncio pycoingecko~=2.2.0
            python3 telethon.py
        - name: Loop workflow
          continue-on-error: true
